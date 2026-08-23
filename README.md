@@ -1,1 +1,1 @@
-# Proyecto_Analisis_y_Diseno_de_Sistemas_de_Informacion
+# Proyecto_Analisis_y_Diseno_de_Sistemas
