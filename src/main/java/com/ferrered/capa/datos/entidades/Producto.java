@@ -17,7 +17,41 @@ public class Producto {
     private boolean estado;
     private int idCategoria;
 
+    // ---- Campos de apoyo (NO son columnas de producto) ----
+    private int stockActual;
+    private int stockMinimo;
+    private String nombreCategoria;
+
     public Producto() {
+    }
+
+    public int getStockActual() {
+        return stockActual;
+    }
+
+    public void setStockActual(int stockActual) {
+        this.stockActual = stockActual;
+    }
+
+    public int getStockMinimo() {
+        return stockMinimo;
+    }
+
+    public void setStockMinimo(int stockMinimo) {
+        this.stockMinimo = stockMinimo;
+    }
+
+    public String getNombreCategoria() {
+        return nombreCategoria;
+    }
+
+    public void setNombreCategoria(String nombreCategoria) {
+        this.nombreCategoria = nombreCategoria;
+    }
+
+    /** true si el stock está en nivel crítico (stockActual <= stockMinimo). */
+    public boolean stockBajo() {
+        return stockActual <= stockMinimo;
     }
 
     public int getIdProducto() {
